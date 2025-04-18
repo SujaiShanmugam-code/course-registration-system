@@ -27,11 +27,7 @@ A simple web-based application for course registration, built with a front-end i
   - Lombok
   - MySQL
 
-## Installation
-
-To set up and run this project locally, follow these steps:
-
-### Prerequisites
+### Requirements
 
 - Java (JDK 11 or above)
 - Maven
