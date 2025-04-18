@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Registrator</title>
+
+    <style>
+      body {
+        background-color: black;
+        text-align: center;
+      }
+
+      form {
+        margin: auto;
+        padding: 20px;
+        width: 400px;
+        background-color: #fff;
+      }
+
+      input,
+      select,
+      button {
+        width: 90%;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        font-weight: bold;
+        font-size: medium;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #104212;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: rgb(136, 242, 242)">Register a Course</h1>
+
+    <form action="http://localhost:8080/courses/enroll" method="post">
+      <label for="name">Enter your name</label>
+      <input type="text" name="name" id="name" />
+      <br /><br />
+
+      <label for="email">Enter your email</label>
+      <input type="text" name="email" id="email" />
+      <br /><br />
+
+      <label for="enrolledCourse">Select a course</label>
+
+      <select name="enrolledCourse" id="enrolledCourse">
+        <option value="Java">Java</option>
+        <option value="SpringBoot">SpringBoot</option>
+        <option value="HTML">HTML&CSS</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Biology">Biology</option>
+      </select>
+
+      <br /><br />
+
+      <button type="submit">Click to Submit</button>
+    </form>
+  </body>
+</html>
